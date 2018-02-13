@@ -1,0 +1,63 @@
+    1  ifconfig
+    2  hostname puppet
+    3  hostname
+    4  exit
+    5  echo puppet > /etc/hostname
+    6  exec bash
+    7  ifconfig
+    8  nano /etc/hosts
+    9  cat /etc/hosts
+   10  ping nano
+   11  ping node1
+   12  ping node2
+   13  ping puppet
+   14  ping google.com
+   15  ifconfig -a
+   16  chage -l
+   17  chage -d root
+   18  chage -l root
+   19  chage -R root
+   20  chage -r /home/test root
+   21  pwd
+   22  cd /etc/puppetlabs/code/environments/
+   23  ls
+   24  mkdir delelopment
+   25  rm -r delelopment
+   26  mkdir -p development
+   27  cd development/
+   28  nano site.pp
+   29  service puppetserver restart
+   30  ping node1
+   31  service puppetserver statu
+   32  service puppetserver status
+   33  service puppet stop
+   34  service puppet start
+   35  service puppet status
+   36  service puppet restart
+   37  service puppet status
+   38  '
+'
+   39  '
+
+
+
+
+   40  pwd
+   41  ls -ltr
+   42  more site.pp
+   43  ls -ltr
+   44  cd ../production/
+   45  cat site.pp 
+   46  service puppet status
+   47  cd ..
+   48  ls -l
+   49  rm -r development/
+   50  service puppetserver stop
+   51  service puppetserver start
+   52  service puppet status
+   53  puppet cert list -a
+   54  puppet cert list
+   55  ls
+   56  ls -l production/
+   57  cd ..
+   58  history > mycommands.txt
